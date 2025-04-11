@@ -28,33 +28,35 @@ Before running this workflow, make sure you have the following:
 ### 1. Run n8n Locally
 
 Start your local instance by running:
-
+This will open the n8n editor at: [http://localhost:5678](http://localhost:5678)
 ```bash
-n8n
+n8n 
 
+```
+## 2. Import the Workflow JSON
 
-This will open the n8n editor at: http://localhost:5678
+- Open the **n8n Editor**
+- Click on **Workflows > Import from File**
+- Select the `.json` file you received or created
+- Click **Import**
 
-2. Import the Workflow JSON
-Open the n8n Editor
+## 3. Configure Any Required Credentials
 
-Click on Workflows > Import from File
-
-Select the .json file you received or created
-
-Click Import
-
-3. Configure Any Required Credentials
 If the workflow uses any external APIs or authentication:
 
-Go to Credentials > Create New
+- Go to **Credentials > Create New**
+- Fill in the required details (API keys, headers, etc.)
+- Attach them to the appropriate **HTTP Request** or **scraping node**
 
-Fill in the required details (API keys, headers, etc.)
+## 4. Run the Workflow
 
-Attach them to the appropriate HTTP Request or scraping node
+- Click **Execute Node** or **Execute Workflow**
+- You’ll see the scraped data in the output (**JSON format**)
 
-4. Run the Workflow
-Click Execute Node or Execute Workflow
 
-You’ll see the scraped data in the output (JSON format)
+
+
+
+
+
 
